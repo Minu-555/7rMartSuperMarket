@@ -1,0 +1,9 @@
+testscript\ManageCategoryTest.class
+generateReport\Listeners.class
+testscript\AdminUsersTestPage.class
+testscript\LoginPageTest.class
+testscript\Base.class
+testscript\ManageNewsTest.class
+testscript\AdminUsersEditTest.class
+testscript\HomePageTest.class
+retry\Retry.class

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-11-25T20:23:30 IST" name="ParallelTesting" finished-at="2025-11-25T20:26:21 IST" duration-ms="170971">
+    <groups>
+      <group name="smoke">
+        <method signature="LoginPageTest.invalidUsernameAndinvalidpassword(java.lang.String,java.lang.String)[pri:0, instance:testscript.LoginPageTest@5bf0d49]" name="invalidUsernameAndinvalidpassword" class="testscript.LoginPageTest"/>
+        <method signature="LoginPageTest.verifyLoginWithValidUsernameAndPassword()[pri:0, instance:testscript.LoginPageTest@5bf0d49]" name="verifyLoginWithValidUsernameAndPassword" class="testscript.LoginPageTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2025-11-25T20:23:30 IST" name="parallelTest.xml" finished-at="2025-11-25T20:26:21 IST" duration-ms="170971">
+      <class name="testscript.ManageNewsTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testscript.ManageNewsTest@31190526]" started-at="2025-11-25T20:23:31 IST" name="beforeMethod" finished-at="2025-11-25T20:23:49 IST" duration-ms="18024" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyNews(java.lang.String,java.lang.String)[pri:0, instance:testscript.ManageNewsTest@31190526]" started-at="2025-11-25T20:23:49 IST" name="verifyNews" finished-at="2025-11-25T20:24:26 IST" duration-ms="36728" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNews -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testscript.ManageNewsTest@31190526]" started-at="2025-11-25T20:24:26 IST" name="afterMethod" finished-at="2025-11-25T20:24:26 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNews status=SUCCESS method=ManageNewsTest.verifyNews(java.lang.String,java.lang.String)[pri:0, instance:testscript.ManageNewsTest@31190526] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testscript.ManageNewsTest -->
+      <class name="testscript.LoginPageTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testscript.LoginPageTest@5bf0d49]" started-at="2025-11-25T20:23:31 IST" name="beforeMethod" finished-at="2025-11-25T20:23:49 IST" duration-ms="18396" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="invalidUsernameAndinvalidpassword(java.lang.String,java.lang.String)[pri:0, instance:testscript.LoginPageTest@5bf0d49]" started-at="2025-11-25T20:23:49 IST" name="invalidUsernameAndinvalidpassword" data-provider="Credentials" finished-at="2025-11-25T20:24:04 IST" duration-ms="14346" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Minu]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidUsernameAndinvalidpassword -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testscript.LoginPageTest@5bf0d49]" started-at="2025-11-25T20:24:04 IST" name="afterMethod" finished-at="2025-11-25T20:24:04 IST" duration-ms="16" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidUsernameAndinvalidpassword status=SUCCESS method=LoginPageTest.invalidUsernameAndinvalidpassword(java.lang.String,java.lang.String)[pri:0, instance:testscript.LoginPageTest@5bf0d49] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testscript.LoginPageTest@5bf0d49]" started-at="2025-11-25T20:24:04 IST" name="beforeMethod" finished-at="2025-11-25T20:24:24 IST" duration-ms="20345" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="invalidUsernameAndinvalidpassword(java.lang.String,java.lang.String)[pri:0, instance:testscript.LoginPageTest@5bf0d49]" started-at="2025-11-25T20:24:24 IST" name="invalidUsernameAndinvalidpassword" data-provider="Credentials" finished-at="2025-11-25T20:24:30 IST" duration-ms="5469" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Anu]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidUsernameAndinvalidpassword -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testscript.LoginPageTest@5bf0d49]" started-at="2025-11-25T20:24:30 IST" name="afterMethod" finished-at="2025-11-25T20:24:30 IST" duration-ms="166" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidUsernameAndinvalidpassword status=SUCCESS method=LoginPageTest.invalidUsernameAndinvalidpassword(java.lang.String,java.lang.String)[pri:0, instance:testscript.LoginPageTest@5bf0d49] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testscript.LoginPageTest@5bf0d49]" started-at="2025-11-25T20:24:31 IST" name="beforeMethod" finished-at="2025-11-25T20:24:44 IST" duration-ms="12605" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyLoginWithValidUsernameAndPassword()[pri:0, instance:testscript.LoginPageTest@5bf0d49]" started-at="2025-11-25T20:24:44 IST" name="verifyLoginWithValidUsernameAndPassword" finished-at="2025-11-25T20:25:21 IST" duration-ms="37233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidUsernameAndPassword -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testscript.LoginPageTest@5bf0d49]" started-at="2025-11-25T20:25:24 IST" name="afterMethod" finished-at="2025-11-25T20:25:25 IST" duration-ms="758" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginWithValidUsernameAndPassword status=SUCCESS method=LoginPageTest.verifyLoginWithValidUsernameAndPassword()[pri:0, instance:testscript.LoginPageTest@5bf0d49] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testscript.LoginPageTest@5bf0d49]" started-at="2025-11-25T20:25:27 IST" name="beforeMethod" finished-at="2025-11-25T20:26:07 IST" duration-ms="40074" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyLoginWithinvalidUsernameAndValidpassword(java.lang.String,java.lang.String)[pri:0, instance:testscript.LoginPageTest@5bf0d49]" started-at="2025-11-25T20:26:08 IST" name="verifyLoginWithinvalidUsernameAndValidpassword" finished-at="2025-11-25T20:26:21 IST" duration-ms="12714" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithinvalidUsernameAndValidpassword -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testscript.LoginPageTest@5bf0d49]" started-at="2025-11-25T20:26:21 IST" name="afterMethod" finished-at="2025-11-25T20:26:21 IST" duration-ms="105" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginWithinvalidUsernameAndValidpassword status=SUCCESS method=LoginPageTest.verifyLoginWithinvalidUsernameAndValidpassword(java.lang.String,java.lang.String)[pri:0, instance:testscript.LoginPageTest@5bf0d49] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testscript.LoginPageTest -->
+    </test> <!-- parallelTest.xml -->
+  </suite> <!-- ParallelTesting -->
+</testng-results>

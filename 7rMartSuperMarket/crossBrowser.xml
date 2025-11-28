@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parameter">
+	<parameter name="username" value="admin"></parameter>
+	<parameter name="password" value="admin"></parameter>
+	<test name="ChromeTest">
+		<parameter name="Browser" value="Chrome"></parameter>
+		<classes>
+			<class name="testscript.ManageNewsTest"></class>
+		</classes>
+	</test>
+	<test name="EdgeTest">
+		<parameter name="Browser" value="Edge"></parameter>
+		<classes>
+			<class name="testscript.ManageNewsTest"></class>
+		</classes>
+	</test>
+	<test name="FirefoxTest">
+		<parameter name="Browser" value="Firefox"></parameter>
+		<classes>
+			<class name="testscript.ManageNewsTest"></class>
+		</classes>
+	</test>
+</suite>
