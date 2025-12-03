@@ -23,9 +23,16 @@ public class PageUtility
         select.selectByValue(value);
     }
 	
-	public void dragAndDrop(WebElement source, WebElement target) 
-	{
-		
-        //actions.dragAndDrop(source, target).perform();
+	// Get element text
+    public String getElementText(WebElement element)
+    {
+        return element.getText();
     }
-}
+
+    // Check element is displayed
+    public boolean isElementDisplayed(WebElement element) 
+    {
+        return element.isDisplayed();
+    }
+
+ }

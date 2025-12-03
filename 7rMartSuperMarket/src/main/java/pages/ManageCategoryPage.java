@@ -73,7 +73,9 @@ public class ManageCategoryPage
   public ManageCategoryPage manageCategorySaveClick()
   {
 	  wait.waitforElementToClick(driver, manageCategorySaveBtn);
-	  manageCategorySaveBtn.click();
+	  JavascriptExecutor executor= (JavascriptExecutor) driver;
+	  executor.executeScript("arguments[0].click();",manageCategorySaveBtn);
+	  //manageCategorySaveBtn.click();
 	  return this;
   }
   

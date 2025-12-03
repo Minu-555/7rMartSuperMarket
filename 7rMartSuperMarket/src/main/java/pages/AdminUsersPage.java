@@ -28,9 +28,9 @@ public class AdminUsersPage
     
     @FindBy(xpath="//a[@class='btn btn-rounded btn-primary']") WebElement searchBtn; 
     @FindBy(xpath="//input[@id='un']") WebElement searchUsername;
-	@FindBy(xpath="//select[@id='ut']") WebElement searchUserType;
+	@FindBy(xpath="//select[@name='ut']") WebElement searchUserType;
 	@FindBy(xpath="//button[@name='Search']") WebElement searchButton;
-	@FindBy(xpath="//table[@class='table table-bordered table-hover table-sm']/tbody/tr/td[1]") WebElement searchElement;
+	@FindBy(xpath="//td[text()='Hilbert']") WebElement searchElement;
        
     public AdminUsersPage clickOnNew() 
     {
@@ -78,10 +78,11 @@ public class AdminUsersPage
     
     public AdminUsersPage selectUseTypeForSearching()
     {
-    	//pageUtilityObj.selectByVisibleText(userType, "Admin");
-    	//pageUtilityObj.selectByValue(userType, "Admin");
-    	Select dropdownlist= new Select(userType);
-    	dropdownlist.selectByVisibleText("Admin");
+    	pageUtilityObj.selectByVisibleText(userType, "Admin");
+    //	pageUtilityObj.selectByValue(userType, "Admin");
+    //	pageUtilityObj.selectByIndex(userType, 2);
+    	//Select dropdownlist= new Select(userType);
+    	//dropdownlist.selectByVisibleText("Admin");
     	
     	return this;
     }
@@ -94,8 +95,9 @@ public class AdminUsersPage
     
     public boolean searchElementIsDisplayed()
     {
- 	   return searchElement.isDisplayed();
+    	return searchElement.isDisplayed();
     }
+  
     
 
 }

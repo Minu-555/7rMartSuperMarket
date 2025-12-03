@@ -37,9 +37,8 @@ public class AdminUsersTestPage extends Base
 	  loginPageObj.enterUsernameAndPassword(username, password);
 	  home= loginPageObj.clickOnLoginButton();
 	  admin= home.clickOnAdminUsers();
-	  String new_username= fake.getUserName();
-	  String new_password= fake.getPassword();
-	  admin.clickOnNew().enterUserNameAndPassword(new_username, new_password).selectUserType().clickOnSave().clickOnSearchIcon().enterUserNameForSearching(new_username).selectUseTypeForSearching().clickOnSearchButton();
+	
+	  admin.clickOnSearchIcon().enterUserNameForSearching("Hilbert").clickOnSearchButton();
 	  
 	  boolean searchElemnt= admin.searchElementIsDisplayed();
 	  Assert.assertTrue(searchElemnt);

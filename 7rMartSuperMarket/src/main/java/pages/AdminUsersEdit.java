@@ -6,11 +6,13 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import utilities.PageUtility;
+import utilities.WaitUtility;
 
 public class AdminUsersEdit 
 {
  
 	WebDriver driver;
+	WaitUtility wait= new WaitUtility();
 	PageUtility pageUtilityObj= new PageUtility();
 	
 	public AdminUsersEdit(WebDriver driver)
@@ -24,43 +26,16 @@ public class AdminUsersEdit
 	//@FindBy(xpath="//input[@id='password']") WebElement password;
 	//@FindBy(xpath="//select[@name='user_type']") WebElement userType;
    // @FindBy(xpath="//button[@name='Create']") WebElement saveBtn;
-	   @FindBy(xpath="//table[@class='table table-bordered table-hover table-sm']//tbody/tr[1]//a[contains(@href, 'edit')]") WebElement editIcon;
-	   @FindBy(xpath="//input[@value='pearlie.bosco']") WebElement editUsername;
-	   @FindBy(xpath="//input[@value='ln1rwa0kr94yi']") WebElement editPassword;
-	   @FindBy(xpath="//button[@class='btn btn-block-sm btn-info']") WebElement updateBtn;
+	  @FindBy(xpath="(//a[@class='btn btn-sm btn btn-primary btncss'])[1]") WebElement editIcon;
+	   @FindBy(xpath="//input[@id='username']") WebElement editUsername;
+	   @FindBy(xpath="//input[@id='password']") WebElement editPassword;
+	   @FindBy(xpath="//button[@name='Update']") WebElement updateBtn;
+	   @FindBy(xpath="//div[@class='alert alert-success alert-dismissible']") WebElement updateAlert;
 
-
-   // public AdminUsersEdit clickOnNew() 
-   // {
-    //	newBtn.click();
-    //	return this;
-    //}
-    
-    
-
-   // public AdminUsersEdit enterUserNameAndPassword(String usernameField, String passwordField) 
-   // {
-    //	username.sendKeys(usernameField);
-    //	password.sendKeys(passwordField);
-    //	return this;
-    //}
-    
-   // public AdminUsersEdit selectUserType() 
-    //{
-    	//Select dropdown= new Select(userType);
-    	//dropdown.selectByVisibleText("Admin");
-    //	pageUtilityObj.selectByVisibleText(userType, "Admin");
-    	//return this;
-    //}
- 
-    //public AdminUsersEdit clickOnSave() 
-    //{
-    //	saveBtn.click();
-    //	return this;
-    //}
-	   
+   	   
 	   public AdminUsersEdit clickOnEditIcon()
 	   {
+		   wait.waitforElementToClick(driver, editIcon);
 		   editIcon.click();
 		   return this;
 	   }
@@ -77,5 +52,10 @@ public class AdminUsersEdit
 		   updateBtn.click();
 		   return this;
 	   }
+	   
+	   public boolean updateSuccessfullAlert()
+	    {
+	 	   return updateAlert.isDisplayed();
+	    }
 }
 

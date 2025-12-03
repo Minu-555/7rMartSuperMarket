@@ -69,11 +69,11 @@ public class Base {
 			ScreenShotUtilities sc = new ScreenShotUtilities();
 			sc.captureFailureScreenShot(driver, itResult.getName());
 		}
-		// if (driver != null)
-		// {
-		// driver.quit();
-		// }
-		// driver.quit();
+		if (driver != null)
+		{
+		//driver.quit();
+		}
+		//driver.quit();
 	}
 
 }

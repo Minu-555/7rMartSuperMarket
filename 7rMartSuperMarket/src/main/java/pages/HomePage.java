@@ -17,7 +17,7 @@ public class HomePage
 	@FindBy(xpath="//a[@data-toggle='dropdown']") WebElement admin;
 	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/logout']") WebElement logout;
 	
-	@FindBy(xpath="//div[@class='col-lg-3 col-6'][1]//child::a") WebElement adminUsers;    //admin users xpath
+	@FindBy(xpath="//div[@class='col-lg-3 col-6'][1]//child::a") WebElement adminUsers;    
 	
 	@FindBy(xpath="//div[@class='col-lg-3 col-6'][7]//child::a") WebElement manageNews;
 	
